@@ -1,0 +1,30 @@
+from FechaHora import claseFechaHora
+if __name__ == '__main__':
+    d = int(input('Ingrese Dia: '))
+    m = int(input('Ingrese Mes: '))
+    a = int(input('Ingrese Año: '))
+    h = int(input('Ingrese Hora: '))
+    mi = int(input('Ingrese Minutos: '))
+    s = int(input('Igrese Segundos: '))
+    r = claseFechaHora()
+    r1 = claseFechaHora(d, m, a)
+    r2 = claseFechaHora(d, m, a, h, mi, s)
+    r.Mostrar()
+    r1.Mostrar()
+    r2.Mostrar()
+    input()
+    r.PonerEnHora(5)    #hora
+    r.Mostrar()
+    input()
+    r2.PonerEnHora(13, 30)  #hora y minutos
+    r2.Mostrar()
+    input()
+    r.PonerEnHora(14, 30, 25)   #hora, minutos y segundos
+    r.Mostrar()
+    input()
+    r.AdelantarHora(3)
+    r.Mostrar()
+    input()
+    r1.AdelantarHora(1, 15)
+    r1.Mostrar()
+    input()
